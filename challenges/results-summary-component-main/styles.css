@@ -1,0 +1,184 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    font-size: 11px;
+    text-align: center;
+    font-family: MainFont;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  justify-self: flex-end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#main_container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    max-width:30rem;
+    -webkit-box-shadow: 9.5px 9.5px 23.5px -12.5px #8d96de;
+    -moz-box-shadow: 9.5px 9.5px 23.5px -12.5px #8d96de;
+    box-shadow: 9.5px 9.5px 23.5px -12.5px #8d96de;
+    flex-wrap: wrap;
+}
+
+#Result_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    min-width: 150px;
+    width: calc(50% - 5rem);
+    border-radius: 2rem;
+    background: #1125d4;
+    background: -webkit-linear-gradient(0deg, #1125d4 0%, #7857ff 100%);
+    background: linear-gradient(0deg, #1125d4 0%, #7857ff 100%);
+    padding: 0rem 2.5rem;
+}
+#Result_header{
+    font-size: 1rem;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+#Result_score_figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 100%;
+    background: rgba(36, 33, 202, 0);
+    background: -webkit-linear-gradient(0deg, rgba(36, 33, 202, 0) 0%, #4e21ca 100%);
+    background: linear-gradient(0deg, rgba(36, 33, 202, 0) 0%, #4e21ca 100%);
+}
+
+#Result_score_figure :nth-child(1){
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 0px;
+}
+#Result_score_figure :nth-child(2){
+    margin: 0px;
+    color: hsl(241, 100%, 89%);
+}
+
+#Result_status{
+    font-size: 1.5rem;
+    margin: 0rem;
+    font-weight: 700;
+}
+
+#Result_description{
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 2rem;
+}
+#Sumary_container{
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+    width: calc(50% - 4rem);
+    padding: 0rem 1.5rem;
+    min-width: 150px;
+}
+
+#Sunary_header{
+    margin-top: 1.2rem;
+    align-self: flex-start;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#Summary_item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0rem .4rem;
+    border-radius: .3rem;
+    margin: .2rem 0rem;
+}
+#Sumary_item_figure{
+    margin: 0rem;
+    display: flex;
+}
+#Sumary_item_figure img{
+    margin-right: .3rem;
+}
+#Sumary_item_score{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+}
+#Sumary_item_score :nth-child(2){
+    color: hsl(241, 100%, 89%);
+    margin-left: .2rem;
+}
+
+#Sumary_container :nth-child(2) figure p{
+    color: hsl(0, 100%, 67%);
+}
+#Sumary_container >:nth-child(2){
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+#Sumary_container :nth-child(3) figure p{
+    color: hsl(39, 100%, 56%);
+}
+#Sumary_container >:nth-child(3){
+    background-color: hsla(39, 100%, 56%,0.1);
+}
+#Sumary_container :nth-child(4) figure p{
+    color: hsl(166, 100%, 37%);
+}
+#Sumary_container >:nth-child(4){
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+#Sumary_container :nth-child(5) figure p{
+    color: hsl(234, 85%, 45%);
+}
+#Sumary_container >:nth-child(5){
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+#Continue_button{
+    background: #1125d4;
+    background: -webkit-linear-gradient(0deg, #1125d4 0%, #7857ff 100%);
+    background: linear-gradient(0deg, #1125d4 0%, #7857ff 100%);
+    border: none;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 100%);
+    padding: .5rem;
+    height: 10%;
+}
+
+@font-face {
+    font-family: MainFont;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+@media (max-width: 375px) {
+    body {
+        justify-content: flex-start;
+    }
+    #main_container{
+        height: 100vh;
+        width: 100%;
+    }
+    #Result_container{
+        width: 100%;
+        border-top-right-radius: 0rem;
+        border-top-left-radius: 0rem;
+    }
+    #Sumary_container{
+        width: 100%;
+    }
+  }
